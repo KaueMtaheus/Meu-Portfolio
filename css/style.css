@@ -168,6 +168,11 @@ nav > h1 {
     background-color: #494b4d;
     padding: 10px;
     border-radius: 10px;
+    perspective: 1500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+
 }
 
 .projetos-container p {
@@ -178,4 +183,36 @@ nav > h1 {
 .projetos-container  i {
     text-align: center;
     font-size: 20px;
+}
+
+
+.projetos-container:hover {
+    transform: rotateY(20deg) rotateX(10deg);
+}
+
+
+/* Para o Chrome, Safari e Edge */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem (para barras horizontais) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da parte deslizante da barra de rolagem */
+    border-radius: 15px; /* Bordas arredondadas da parte deslizante */
+    border: 3px solid #eee; /* Cor da borda ao redor da parte deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor da parte deslizante quando o cursor está sobre ela */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da área de rolagem */
+    border-radius: 10px; /* Bordas arredondadas da área de rolagem */
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #ddd; /* Cor de fundo quando o cursor está sobre a área de rolagem */
+    width: 10px;
 }
