@@ -93,8 +93,7 @@ nav > h1 {
     margin-top: 50px;
 }
 
-
-/* habilidades*/
+/*Sobre*/
 
 #container2 {
     width: 100%;
@@ -104,6 +103,9 @@ nav > h1 {
 }
 
 #container2 p {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     width: 500px;
     margin: auto;
     padding: 20px;
@@ -111,7 +113,14 @@ nav > h1 {
     border-left: 2px solid white;
 }
 
+#container2 p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+
+
+/* habilidades*/
 
 #skills-pag {
     background-color: #494b4d;   
@@ -200,7 +209,7 @@ nav > h1 {
 ::-webkit-scrollbar-thumb {
     background-color: #888; /* Cor da parte deslizante da barra de rolagem */
     border-radius: 15px; /* Bordas arredondadas da parte deslizante */
-    border: 3px solid #eee; /* Cor da borda ao redor da parte deslizante */
+    border: 1px solid #a3a3a3; /* Cor da borda ao redor da parte deslizante */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -208,8 +217,8 @@ nav > h1 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor de fundo da área de rolagem */
-    border-radius: 10px; /* Bordas arredondadas da área de rolagem */
+    background: #616161; /* Cor de fundo da área de rolagem */
+    border-radius: 3px; /* Bordas arredondadas da área de rolagem */
 }
 
 ::-webkit-scrollbar-track:hover {
