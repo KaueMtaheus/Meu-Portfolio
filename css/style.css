@@ -12,6 +12,38 @@ body {
 }
 
 
+/*rolagem scroll*/
+
+/* Para o Chrome, Safari e Edge */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem (para barras horizontais) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor da parte deslizante da barra de rolagem */
+    border-radius: 15px; /* Bordas arredondadas da parte deslizante */
+    border: 1px solid #a3a3a3; /* Cor da borda ao redor da parte deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor da parte deslizante quando o cursor está sobre ela */
+}
+
+::-webkit-scrollbar-track {
+    background: #616161; /* Cor de fundo da área de rolagem */
+    border-radius: 3px; /* Bordas arredondadas da área de rolagem */
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #ddd; /* Cor de fundo quando o cursor está sobre a área de rolagem */
+    width: 10px;
+}
+
+
+
+/*Navegação*/
+
 nav {
     position: fixed;
     background-color: #616161;
@@ -120,7 +152,8 @@ nav > h1 {
     border-bottom: 1px solid #f5e2a9;
 }
 
-/* habilidades*/
+
+/*Sobre*/
 
 #container2 {
     width: 100%;
@@ -130,6 +163,9 @@ nav > h1 {
 }
 
 #container2 p {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     width: 500px;
     margin: auto;
     padding: 20px;
@@ -137,7 +173,15 @@ nav > h1 {
     border-left: 2px solid white;
 }
 
+#container2 p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+
+
+
+/* habilidades*/
 
 #skills-pag {
     background-color: #494b4d;   
@@ -175,7 +219,7 @@ nav > h1 {
     color: #f5e2a9;
 }
 
-/*Slids Projetos*/
+/*Projetos*/
 
 #project-pag {
     background-color: ;
@@ -208,12 +252,20 @@ nav > h1 {
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
+    perspective: 1500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
 .projetos-container:hover {
+    transform: rotateY(20deg) rotateX(10deg);
     border: 1px solid #f5e2a9;
     zoom: 1.0;
 }
+
+
+
 .projetos-container img {
     display: flex;
     width: 100%;
