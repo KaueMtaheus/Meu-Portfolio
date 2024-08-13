@@ -46,6 +46,7 @@ body {
 
 nav {
     position: fixed;
+    z-index: 1;
     background-color: #616161;
     display: flex;
     padding: 10px;
@@ -131,6 +132,7 @@ nav > h1 {
 .btn:hover {
     border: 1px solid #c8b271;
     font-weight: bold;
+    
 }
 
 .icons {
@@ -140,7 +142,7 @@ nav > h1 {
     justify-content: center;
     margin-top: 50px;
     font-size: 40px;
-    color: #f5e2a9;
+    color: #f5e2a9; 
 }
 
 .icons i {
