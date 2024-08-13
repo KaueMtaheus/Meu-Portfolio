@@ -21,13 +21,15 @@ nav {
 }
 
 nav > h1 {
-    padding-left: 10px;
+    padding-left: 20px;
+    color: #f5e2a9;
 }
 
 #navegação {
     display: flex;
     margin-left: auto;
     list-style: none;
+    padding-right: 30px;
 }
 
 #navegação li {
@@ -35,12 +37,19 @@ nav > h1 {
     font-size: 16px;
     margin: auto;
     font-weight: bold;
+    color: #f5e2a9;
+    cursor: pointer;
+}
+
+#navegação li:hover {
+     border-bottom: 1px solid #f5e2a9;
+    padding-right: 27px;
 }
 
 /*  inicio pagina  */
 
 #inicio-pag {
-    background-color: #494b4d;
+    background: linear-gradient(to bottom, #494b4d, #494b4d, #494b4d, #00000043);
     padding: 20px;
     height: 600px;
 }
@@ -55,13 +64,14 @@ nav > h1 {
 
 #container1 h1 {
     display: flex;
+    color: #f5e2a9;
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
     width: 450px;
     text-align: left;
     margin: auto;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid #f5e2a9;
 }
 
 #container1 p {
@@ -71,14 +81,14 @@ nav > h1 {
     text-align: left;
 }
 
-#btncv {
+.btn {
     display: flex;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid #cfcfcfe1;
-    color: white;
+    border: 1px solid #f5e2a9;
+    color: #f5e2a9;
     border-radius: 5px;
     width: 150px;
     justify-content: center;
@@ -86,13 +96,29 @@ nav > h1 {
 }
 
 
-#icons {
+.btn:hover {
+    border: 1px solid #c8b271;
+    font-weight: bold;
+}
+
+.icons {
+    cursor: pointer;
     display: flex;
     margin: auto;
     justify-content: center;
     margin-top: 50px;
+    font-size: 40px;
+    color: #f5e2a9;
 }
 
+.icons i {
+    padding-right: 15px;
+}
+
+.icons i:hover {
+    font-size: 45px;
+    border-bottom: 1px solid #f5e2a9;
+}
 
 /* habilidades*/
 
@@ -120,8 +146,12 @@ nav > h1 {
 }
 
 #skills-pag h2 {
+    margin: auto;
+    width: 200px;
     text-align: center;
     margin-top: 30px;
+    color: #f5e2a9;
+    border-bottom: 1px solid #f5e2a9;
 }
 
 
@@ -142,40 +172,108 @@ nav > h1 {
     margin-bottom: 20px;
     justify-content: center;
     display: flex;
+    color: #f5e2a9;
 }
 
 /*Slids Projetos*/
 
 #project-pag {
+    background-color: ;
     padding: 20px;
     height: 600px;
 }
 
 #project-pag h2 {
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 30px;
+    width: 200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: #f5e2a9;
+    border-bottom: 1px solid #f5e2a9;
 }
 
 
-#container4 {
+.container4 {
     display: flex;
 }
 
 .projetos-container {
     margin: auto;
+    margin-top: 20px;
     width: 300px;
     height: 350px;
-    background-color: #494b4d;
+    border: 1px solid #b19e66d7;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.projetos-container:hover {
+    border: 1px solid #f5e2a9;
+    zoom: 1.0;
+}
+.projetos-container img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+    border-radius: 15px;
+
 }
 
 .projetos-container p {
-    margin-top: 70%;
+    margin-top: 10px;
     text-align: center;
 }
+
 
 .projetos-container  i {
     text-align: center;
     font-size: 20px;
+}
+
+.btnpro {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #cfcfcfe1;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.tecnolog {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.tecnolog i {
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+/*contato*/
+
+
+
+#cotantos-pag {
+    padding: 20px;
+    height: 400px;
+}
+
+
+#container5 h2 {
+    text-align: center;
+    margin-top: 150px;
+    border-top: 1px solid #f5e2a9;
+    padding: 20px;
 }

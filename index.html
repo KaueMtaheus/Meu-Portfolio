@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/arquivos/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/1b9da4565a.js" crossorigin="anonymous"></script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -26,16 +26,13 @@
         <section id="inicio-pag">
             <div id="container1">
                 <h1>Desenvolvedor Web</h1>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Nostrum quam vitae nihil, similique, nobis, laborum magni dolorem cum quis omnis possimus? Magni alias harum ad,
-                omnis itaque possimus velit accusantium.</p>
-                <button id="btncv">Dowload CV</button>
-                <div id="icons">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
+                <p>Seja muito bem-vindo. Este portfólio foi desenvolvido com tecnologias básicas, pois prefiro um estilo minimalista que não desvie do objetivo principal, que é apenas a apresentação</p>
+                <button class="btn">Baixar CV</button>
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>              
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </section>
@@ -60,33 +57,54 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
                 </div>
                 <div class="sks">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-node-js"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
                 </div>
                 <div class="sks">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-react"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
                 </div>
             </div>
             <div class="container-sks">
                 <div class="sks">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-figma"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
                 </div>
                 <div class="sks">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-git-alt"></i>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
                 </div>
                 <div class="sks">
-                    <i class="fa-brands fa-js"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
+                    <i class="fa-brands fa-npm"></i>                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
                 </div>
             </div>
         </section>
 
         <section id="project-pag">
             <h2>Projetos</h2>
-            <div id="container4">
+            <div class="container4">
+                <div class="projetos-container">
+                    <img src="img/Design sem nome.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
+                    <div class="tecnolog">
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                </div>
+                <div class="projetos-container">
+                    <img src="img/1721342002082.jpeg" alt="#">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>     
+                </div>
+                <div class="projetos-container">
+                    <img src="img/snakegif.gif" alt="#">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat,</p>
+                </div>
+            </div>
+            <button class="btn" style="margin-top:50px;">Mais Projetos</button>
+
+            <!----quando clicar no botão ver mais os projetos aparece-->
+            <div class="container4" style="display: none;">
                 <div class="projetos-container">
                     <img src="" alt="#">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
@@ -100,8 +118,22 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat,</p>
                 </div>
             </div>
+            <button class="btn" style="display: none;">Ver Menos</button>
         </section>
         
+        <section id="cotantos-pag">
+            <div id="container5">
+                <h2>Entre em Contato</h2>
+                <div class="icons">
+                    <i class="fa-brands fa-linkedin"></i>              
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </section>
+
     </main>   
     <script src="js/script.js"></script>
 </body>
