@@ -15,19 +15,23 @@
         <nav>
             <h1>Portfólio</h1>
             <ul id="navegação">
-                <li>Inicio</li>
-                <li>Sobre</li>
-                <li>Habilidades</li>
-                <li>Projetos</li>
-                <li>Contatos</li>
+                <li class="lista"><a href="#home">Inicio</a></li>
+                <li class="lista"><a href="#about">Sobre</a></li>
+                <li class="lista"><a href="#skills">Habilidades</a></li>
+                <li class="lista"><a href="#project">Projetos</a></li>
+                <li class="lista"><a href="#contact">Contatos</a></li>
             </ul>
             <img src="#" alt="menu" style="display: none;">
         </nav>
-        <section id="inicio-pag">
+
+        <!---home-->
+        <section id="home" class="inicio-pag">
             <div id="container1">
                 <h1>Desenvolvedor Web</h1>
                 <p>Seja muito bem-vindo. Este portfólio foi desenvolvido com tecnologias básicas, pois prefiro um estilo minimalista que não desvie do objetivo principal, que é apenas a apresentação</p>
-                <button class="btn">Baixar CV</button>
+                <a href="itens/Currículo profissional simples modular preto e cinza (4).pdf" download="curriculo.pdf" style="text-decoration: none;">
+                    <button class="btn">Baixar CV</button>
+                </a>
                 <div class="icons">
                     <i class="fa-brands fa-linkedin"></i>              
                     <i class="fa-brands fa-github"></i>
@@ -36,12 +40,15 @@
                 </div>
             </div>
         </section>
-        <section id="sobre-pag">
+
+        <!---sobre-->
+        <section id="about">
             <div id="container2">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, 
                 velit dolorem porro quisquam ut obcaecati quaerat consectetur sed atque tenetur,
-                repellendus corrupti voluptatum quos quas harum!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, 
+                repellendus corrupti voluptatum quos quas harum!<br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore 
+                repellat, 
                 velit dolorem porro quisquam ut obcaecati quaerat consectetur sed atque tenetur,
                 repellendus corrupti voluptatum quos quas harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur earum quae, 
                 cum fugiat repellat mollitia officiis minima odio. 
@@ -49,38 +56,48 @@
                 Quas similique nobis quis dolores? Quaerat.</p>
             </div>
         </section>
-        <section id="skills-pag">
+
+        <!----Habilidades-->
+        <section id="skills">
             <h2>Habilidades</h2>
             <div class="container-sks">
                 <div class="sks">
                     <i class="fa-brands fa-js"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
+                    <h3>JavaScript</h3>
+                    <p> Criação de interfaces interativas com manipulação eficiente do DOM e uso de ES6+ para código moderno. Operações assíncronas, alta performance e fluidez nas aplicações</p>   
                 </div>
                 <div class="sks">
                     <i class="fa-brands fa-node-js"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
+                    <h3>Node.js</h3>
+                    <p>Desenvolvimento de APIs RESTful e gerenciamento de servidores. Pontos fortes: escalabilidade, integração com bancos de dados e otimização de desempenho.</p>   
                 </div>
                 <div class="sks">
                     <i class="fa-brands fa-react"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
+                    <h3>React</h3>
+                    <p>Desenvolvimento de interfaces reativas com hooks e componentes funcionais. Pontos fortes: modularidade, gerenciamento eficaz de estado e experiência de usuário fluida.</p> 
                 </div>
             </div>
             <div class="container-sks">
                 <div class="sks">
                     <i class="fa-brands fa-figma"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>   
+                    <h3>Figma</h3>
+                    <p>Design de interfaces responsivas e prototipagem interativa. Pontos fortes: criação de designs intuitivos, colaboração eficiente e adesão às melhores práticas de UX/UI </p>
                 </div>
                 <div class="sks">
                     <i class="fa-brands fa-git-alt"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
+                    <h3>Git</h3>
+                    <p>Controle de versão com Git, incluindo branching e merging. Pontos fortes: colaboração em equipe, organização do código e gerenciamento de histórico.</p>
                 </div>
                 <div class="sks">
-                    <i class="fa-brands fa-npm"></i>                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
+                    <i class="fa-brands fa-npm"></i>
+                    <h3>npm</h3>
+                    <p>Gerenciamento de pacotes e automação de tarefas. Pontos fortes: integração contínua, manutenção de dependências e scripts personalizados para otimização.</p>
                 </div>
             </div>
         </section>
 
-        <section id="project-pag">
+        <!---project-->
+        <section id="project">
             <h2>Projetos</h2>
             <div class="container4">
                 <div class="projetos-container">
@@ -93,7 +110,7 @@
                     </div>
                 </div>
                 <div class="projetos-container">
-                    <img src="img/1721342002082.jpeg" alt="#">
+                    <img src="img/Design sem nome.png" alt="#">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>     
                 </div>
                 <div class="projetos-container">
@@ -121,7 +138,7 @@
             <button class="btn" style="display: none;">Ver Menos</button>
         </section>
         
-        <section id="cotantos-pag">
+        <section id="contact">
             <div id="container5">
                 <h2>Entre em Contato</h2>
                 <div class="icons">

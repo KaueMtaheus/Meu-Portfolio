@@ -65,23 +65,30 @@ nav > h1 {
     padding-right: 30px;
 }
 
-#navegação li {
+.lista {
     padding-right: 25px;
     font-size: 16px;
     margin: auto;
     font-weight: bold;
-    color: #f5e2a9;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-#navegação li:hover {
-     border-bottom: 1px solid #f5e2a9;
+.lista a {
+    text-decoration: none;
+    color: #f5e2a9;
+}
+
+.lista:hover {
+    transform: scale(1.05) translateZ(0);
+    opacity: 0.9;
+    border-bottom: 1px solid #f5e2a9;
     padding-right: 27px;
 }
 
 /*  inicio pagina  */
 
-#inicio-pag {
+#home {
     background: linear-gradient(to bottom, #494b4d, #494b4d, #494b4d, #00000043);
     padding: 20px;
     height: 600px;
@@ -142,16 +149,18 @@ nav > h1 {
     justify-content: center;
     margin-top: 50px;
     font-size: 40px;
-    color: #f5e2a9; 
+    color: #f5e2a9;
 }
 
 .icons i {
     padding-right: 15px;
+    transition: transform 0.3s ease; 
 }
 
 .icons i:hover {
     font-size: 45px;
     border-bottom: 1px solid #f5e2a9;
+    transform: scale(1.05) translateZ(0);
 }
 
 
@@ -173,11 +182,13 @@ nav > h1 {
     padding: 20px;
     text-align: left;
     border-left: 2px solid white;
+    transition: transform 0.8s ease;
 }
 
 #container2 p.visible {
     opacity: 1;
     transform: translateY(0);
+    transform: scale(1.05) translateZ(0);
 }
 
 
@@ -185,13 +196,13 @@ nav > h1 {
 
 /* habilidades*/
 
-#skills-pag {
+#skills {
     background-color: #494b4d;   
     padding: 20px;
     height: 900px;
 }
 
-#skills-pag h2 {
+#skills h2 {
     margin: auto;
     width: 200px;
     text-align: center;
@@ -209,13 +220,28 @@ nav > h1 {
     width: 200px;
     margin: auto;
     margin-top: 100px;
-    padding: 10px;
+}
+
+.sks p {
+    font-size: 13px;
+    margin: auto;
+    width: 100%;
+}
+
+h3 {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    color: #c8b271;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .sks i {
     font-size: 60px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     justify-content: center;
     display: flex;
     color: #f5e2a9;
@@ -223,13 +249,13 @@ nav > h1 {
 
 /*Projetos*/
 
-#project-pag {
+#project {
     background-color: ;
     padding: 20px;
     height: 600px;
 }
 
-#project-pag h2 {
+#project h2 {
     font-size: 25px;
     text-align: center;
     width: 200px;
@@ -319,7 +345,7 @@ nav > h1 {
 
 
 
-#cotantos-pag {
+#contact {
     padding: 20px;
     height: 400px;
 }
