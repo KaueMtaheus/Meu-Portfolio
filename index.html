@@ -118,10 +118,11 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat,</p>
                 </div>
             </div>
-            <button class="btn" style="margin-top:50px;">Mais Projetos</button>
-
+      
+            <button class="btn" id="btn-ver-mais" style="margin-top:50px;">Mais Projetos</button>
             <!----quando clicar no botão ver mais os projetos aparece-->
-            <div class="container4" style="display: none;">
+            
+            <div class="container4 extra-projects" style="display: none;">
                 <div class="projetos-container" onclick="expandContainer(this)">
                     <img src="" alt="#">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat, </p>
@@ -135,7 +136,9 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, tempora earum labore repellat,</p>
                 </div>
             </div>
-            <button class="btn" style="display: none;">Ver Menos</button>
+
+            <button class="btn" id="btn-ver-menos" style="display: none; margin-top:50px;">Ver Menos</button>
+            <!----quando clicar no botão ver menos os projetos esconde-->
         </section>
         
         <section id="contact">
@@ -153,7 +156,7 @@
 
         <footer>
             <div id="fixfooter">
-                <i class="up fa-solid fa-caret-up"></i>
+                <a id="upa" href="#home"><i class="up fa-solid fa-caret-up"></i></a>
             </div>
         </footer>
     </main>   

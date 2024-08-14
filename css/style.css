@@ -250,10 +250,16 @@ h3 {
 /*Projetos*/
 
 #project {
-    background-color: ;
     padding: 20px;
     height: 600px;
+    transition: height 0.3s ease, padding 0.3s ease; /* Transição suave para a altura e padding */
 }
+
+/* Estilos para a seção de projetos adicionais */
+.extra-projects {
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+}
+
 
 #project h2 {
     font-size: 25px;
@@ -276,7 +282,7 @@ h3 {
     margin-top: 20px;
     width: 300px;
     height: 350px;
-    border: 1px solid #b19e66d7;
+    border: 1px solid #f5e2a967;
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
@@ -365,7 +371,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: #333; /* Fundo escuro para o rodapé */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,11 +382,18 @@ footer {
     width: 100%;
 }
 
-.up {
-    position: fixed;
+.up, #upa {
     display: flex;
     justify-content: end;
-    margin-right: 30px;
-    font-size: 30px;
-    color: #f5e2a9;
+    font-size: 40px;
+    padding-right: 30px;
+    color: #c8b271;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.up:hover {
+    font-size: 43px;
+    color: #907e48;
+
 }

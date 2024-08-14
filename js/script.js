@@ -17,3 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
 });
+
+
+//Animação projetos aparecer, esconder.
+
+document.addEventListener('DOMContentLoaded', function() {
+    const containerProject = document.getElementById('project');
+    const btnVerMais = document.getElementById('btn-ver-mais');
+    const btnVerMenos = document.getElementById('btn-ver-menos');
+    const extraProjects = document.querySelector('.extra-projects');
+
+    function showExtraProjects() {
+        containerProject.style.height = 'auto'; // Ajusta a altura do container para acomodar o conteúdo
+        extraProjects.style.display = 'flex'; // Torna visível a seção adicional de projetos
+        btnVerMais.style.display = 'none'; // Oculta o botão "Ver Mais"
+        btnVerMenos.style.display = 'flex'; // Exibe o botão "Ver Menos"
+    }
+
+    function hideExtraProjects() {
+        containerProject.style.height = 'auto'; // Remove a altura definida para retornar ao tamanho automático
+        extraProjects.style.display = 'none'; // Oculta a seção adicional de projetos
+        btnVerMais.style.display = 'flex'; // Exibe o botão "Ver Mais"
+        btnVerMenos.style.display = 'none'; // Oculta o botão "Ver Menos"
+    }
+
+    btnVerMais.addEventListener('click', showExtraProjects);
+    btnVerMenos.addEventListener('click', hideExtraProjects);
+});
