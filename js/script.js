@@ -1,3 +1,18 @@
+//menu hamburge
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navigation = document.getElementById('navegação');
+
+    menuToggle.addEventListener('click', function() {
+        navigation.classList.toggle('show');
+    });
+});
+
+
+
+
+//animação detransição paragrafo
 document.addEventListener('DOMContentLoaded', function() {
     const elementsToAnimate = document.querySelectorAll('p');
 
@@ -26,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnVerMais = document.getElementById('btn-ver-mais');
     const btnVerMenos = document.getElementById('btn-ver-menos');
     const extraProjects = document.querySelector('.extra-projects');
+    const container = document.getElementById('container4')
 
     function showExtraProjects() {
         containerProject.style.height = 'auto'; // Ajusta a altura do container para acomodar o conteúdo
@@ -40,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btnVerMais.style.display = 'flex'; // Exibe o botão "Ver Mais"
         btnVerMenos.style.display = 'none'; // Oculta o botão "Ver Menos"
     }
+
 
     btnVerMais.addEventListener('click', showExtraProjects);
     btnVerMenos.addEventListener('click', hideExtraProjects);

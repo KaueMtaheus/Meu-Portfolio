@@ -9,6 +9,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -65,6 +66,12 @@ nav > h1 {
     padding-right: 30px;
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
 .lista {
     padding-right: 25px;
     font-size: 16px;
@@ -86,7 +93,7 @@ nav > h1 {
     padding-right: 27px;
 }
 
-/*  inicio pagina  */
+/*home*/
 
 #home {
     background: linear-gradient(to bottom, #494b4d, #494b4d, #494b4d, #00000043);
@@ -399,5 +406,221 @@ footer {
 .up:hover {
     font-size: 43px;
     color: #907e48;
+
+}
+
+/*Responsivo*/
+
+
+@media (max-width: 433px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    #navegação {
+        display: none; /* Esconde a lista de navegação em telas pequenas */
+        flex-direction: column;
+        background-color: #616161;
+    }
+
+    nav > h1 {
+        font-size: 16px;
+    }
+    
+    #navegação.show {
+        position: absolute;
+        display: flex; /* Mostra a lista de navegação quando o menu hambúrguer é clicado */
+        width: 150px;
+        height: 150px;
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o ícone do hambúrguer */
+        color: #f5e2a9;
+        margin: auto;
+        margin-left: 270px;
+    }
+
+    #navegação a {
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    /*home*/
+
+    #container1 h1 {
+        font-size: 30px;
+        font-weight: bold;
+        width: 350px;
+    }
+    
+    #container1 p {
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+        text-align: left;
+    }
+    
+    /*sobre*/
+
+    #container2 {
+        width: 100%;
+        height: 700px;
+        margin-top: 150px;
+    }
+    
+    #container2 p {
+        width: 350px;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+        font-size: 16px;
+        border-left: 2px solid white;
+        transition: transform 0.8s ease;
+    }
+
+
+    /*Habilidades*/
+
+    
+    #skills {
+        height: auto;
+    }
+
+    .container-sks {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    /*Projetos*/
+
+    #project {
+        height: auto;
+    }
+
+    .container4 {
+        display: block;
+    }
+
+    .extra-projects {
+        flex-direction: column; /* Organiza os projetos extras em uma coluna */
+    }
+
+    /*Rodape*/
+
+    .up, #upa {
+        overflow-x: hidden;
+        padding-right: 30px;
+    }
+
+
+}
+
+@media (min-width: 434px) and (max-width: 694px){
+
+    body {
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
+  
+    #navegação {
+        display: none; /* Esconde a lista de navegação em telas pequenas */
+        flex-direction: column;
+        background-color: #616161;
+    }
+
+    nav > h1 {
+        font-size: 16px;
+    }
+    
+    #navegação.show {
+        position: absolute;
+        display: flex; /* Mostra a lista de navegação quando o menu hambúrguer é clicado */
+        width: 150px;
+        height: 150px;
+        margin-left: 370px;
+        margin-top: 38px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o ícone do hambúrguer */
+        color: #f5e2a9;
+        margin: auto;
+        margin-left: 400px;
+    }
+
+    #navegação a {
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    /*home*/
+
+    #container1 h1 {
+        font-size: 30px;
+        font-weight: bold;
+        width: 350px;
+    }
+    
+    #container1 p {
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+        text-align: left;
+    }
+    
+    /*sobre*/
+
+    #container2 {
+        width: 100%;
+        height: 700px;
+        margin-top: 150px;
+    }
+    
+    #container2 p {
+        width: 350px;
+        margin: auto;
+        padding: 20px;
+        text-align: left;
+        font-size: 16px;
+        border-left: 2px solid white;
+        transition: transform 0.8s ease;
+    }
+
+
+    /*Habilidades*/
+
+    
+    #skills {
+        height: auto;
+    }
+
+    .container-sks {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    /*Projetos*/
+
+    #project {
+        height: auto;
+    }
+
+    .container4 {
+        display: block;
+    }
+
+    .extra-projects {
+        flex-direction: column; /* Organiza os projetos extras em uma coluna */
+    }
+
+
+    /*Rodape*/
+
 
 }
