@@ -149,6 +149,9 @@ nav > h1 {
     justify-content: center;
     margin-top: 50px;
     font-size: 40px;
+}
+
+.icons a {
     color: #f5e2a9;
 }
 
@@ -362,6 +365,7 @@ h3 {
     margin-top: 150px;
     border-top: 1px solid #f5e2a9;
     padding: 20px;
+    color: #f5e2a9;
 }
 
 /*Rodape*/

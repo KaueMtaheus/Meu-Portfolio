@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//Animação projetos aparecer, esconder.
+//Animação projetos aparecer, esconder
 
 document.addEventListener('DOMContentLoaded', function() {
     const containerProject = document.getElementById('project');
