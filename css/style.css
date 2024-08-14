@@ -357,3 +357,31 @@ h3 {
     border-top: 1px solid #f5e2a9;
     padding: 20px;
 }
+
+/*Rodape*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #333; /* Fundo escuro para o rodapé */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Certifique-se de que o rodapé esteja acima de outros elementos */
+}
+
+#fixfooter {
+    position: relative;
+    width: 100%;
+}
+
+.up {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    font-size: 30px;
+    color: #f5e2a9;
+}
