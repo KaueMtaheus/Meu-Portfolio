@@ -51,7 +51,7 @@ nav {
     background-color: #616161;
     display: flex;
     padding: 10px;
-    width: 100%;
+    width: 100vw;
 }
 
 nav > h1 {
@@ -385,7 +385,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Certifique-se de que o rodapé esteja acima de outros elementos */
+    z-index: 1; /* Certifique-se de que o rodapé esteja acima de outros elementos */
 }
 
 #fixfooter {
@@ -429,21 +429,30 @@ footer {
         font-size: 16px;
     }
     
-    #navegação.show {
-        position: absolute;
-        display: flex; /* Mostra a lista de navegação quando o menu hambúrguer é clicado */
-        width: 150px;
-        height: 150px;
-        margin-left: 250px;
-        margin-top: 30px;
+
+    #navegação.show { 
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000000c5;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
     }
 
     .menu-toggle {
-        display: block; /* Mostra o ícone do hambúrguer */
+        overflow: hidden;
+        z-index: 1;
+        display: flex; /* Mostra o ícone do hambúrguer */
         color: #f5e2a9;
         margin: auto;
-        margin-left: 270px;
+        margin-left: 70%;
     }
+
 
     #navegação a {
         align-items: center;
@@ -468,6 +477,12 @@ footer {
     
     /*sobre*/
 
+    
+    #about {
+        width: 100%;
+    }
+
+
     #container2 {
         width: 100%;
         height: 700px;
@@ -475,15 +490,23 @@ footer {
     }
     
     #container2 p {
+        transform: translateY(100px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition: transform 0.8s ease;
         width: 350px;
         margin: auto;
         padding: 20px;
         text-align: left;
         font-size: 16px;
         border-left: 2px solid white;
-        transition: transform 0.8s ease;
     }
 
+    #container2 p.visible {
+        opacity: 1;
+        transform: translateX(0);
+        transform: scale(1.05) translateZ(0);
+    }
+    
 
     /*Habilidades*/
 
@@ -513,10 +536,6 @@ footer {
 
     /*Rodape*/
 
-    .up, #upa {
-        overflow-x: hidden;
-        padding-right: 30px;
-    }
 
 
 }
@@ -538,19 +557,26 @@ footer {
     }
     
     #navegação.show {
-        position: absolute;
-        display: flex; /* Mostra a lista de navegação quando o menu hambúrguer é clicado */
-        width: 150px;
-        height: 150px;
-        margin-left: 370px;
-        margin-top: 38px;
+        overflow-x: hidden; 
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000000c5;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
     }
 
     .menu-toggle {
-        display: block; /* Mostra o ícone do hambúrguer */
+        z-index: 1;
+        display: flex; /* Mostra o ícone do hambúrguer */
         color: #f5e2a9;
         margin: auto;
-        margin-left: 400px;
+        margin-left: 75%;
     }
 
     #navegação a {
@@ -622,5 +648,8 @@ footer {
 
     /*Rodape*/
 
+    footer {
+        padding: 0;
+    }
 
 }
