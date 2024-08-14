@@ -1,3 +1,12 @@
+<<<<<<< Updated upstream
+=======
+//menu hamburge
+
+
+
+
+//animação detransição paragrafo
+>>>>>>> Stashed changes
 document.addEventListener('DOMContentLoaded', function() {
     const elementsToAnimate = document.querySelectorAll('p');
 
