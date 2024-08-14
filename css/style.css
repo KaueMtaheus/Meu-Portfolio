@@ -319,9 +319,15 @@ h3 {
 
 }
 
+.projetos-container h3 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 .projetos-container p {
     margin-top: 10px;
     text-align: center;
+    font-size: 12px;
 }
 
 
@@ -460,6 +466,12 @@ footer {
         text-align: center;
     }
 
+    .lista:hover {
+        transform: scale(1.05) translateZ(0);
+        opacity: 0.9;
+        border-bottom: 1px solid #f5e2a9;
+        padding-right: none;
+    }
     /*home*/
 
     #container1 h1 {
@@ -577,12 +589,22 @@ footer {
         color: #f5e2a9;
         margin: auto;
         margin-left: 75%;
+        transition: transform 0.8s ease;
+
+
     }
 
     #navegação a {
         align-items: center;
         margin: auto;
         text-align: center;
+    }
+
+    .lista:hover {
+        transform: scale(1.05) translateZ(0);
+        opacity: 0.9;
+        border-bottom: 1px solid #f5e2a9;
+        padding-right: none;
     }
 
     /*home*/
