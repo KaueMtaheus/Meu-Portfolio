@@ -2,6 +2,15 @@
 =======
 //menu hamburge
 
+<<<<<<< Updated upstream
+=======
+const hamburger = document.querySelector('.hamburger');
+const nav = document.getElementById('#navegacao');
+
+hamburger.addEventListener("click", () =>
+nav.classList.toggle("active"));
+
+>>>>>>> Stashed changes
 
 
 

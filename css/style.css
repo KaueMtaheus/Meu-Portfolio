@@ -242,22 +242,34 @@ nav {
 }
 
 nav > h1 {
-    padding-left: 20px;
+    padding-left: 30px;
     color: #f5e2a9;
 }
 
-#navegação {
+#navegacao {
     display: flex;
     margin-left: auto;
     list-style: none;
     padding-right: 30px;
 }
 
-.menu-toggle {
+.hamburger {
     display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #f5e2a9;
     cursor: pointer;
 }
 
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #f5e2a9;
+    margin-top: 6px;
+}
 
 .lista {
     padding-right: 25px;
@@ -716,32 +728,39 @@ footer {
     }
   
     #navegação {
-        display: none; /* Esconde a lista de navegação em telas pequenas */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
-        background-color: #616161;
+        background: #616161b0;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
     }
 
     nav > h1 {
         font-size: 16px;
     }
     
-    #navegação.show {
-        position: absolute;
-        display: flex; /* Mostra a lista de navegação quando o menu hambúrguer é clicado */
-        width: 150px;
-        height: 150px;
-        margin-left: 370px;
-        margin-top: 38px;
+    #navegaçao.active .lista {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
     }
 
-    .menu-toggle {
+    .hamburger {
+        z-index: 1;
         display: block; /* Mostra o ícone do hambúrguer */
-        color: #f5e2a9;
-        margin: auto;
         margin-left: 400px;
     }
 
-    #navegação a {
+    #navegacao a {
         align-items: center;
         margin: auto;
         text-align: center;
