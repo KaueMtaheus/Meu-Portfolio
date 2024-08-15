@@ -295,7 +295,6 @@ h3 {
     border: 1px solid #f5e2a967;
     padding: 10px;
     border-radius: 15px;
-    cursor: pointer;
     perspective: 1500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
     transform-style: preserve-3d;
@@ -316,6 +315,8 @@ h3 {
     height: 200px;
     margin-bottom: 0;
     border-radius: 15px;
+    cursor: pointer;
+
 
 }
 
@@ -334,7 +335,36 @@ h3 {
 .projetos-container  i {
     text-align: center;
     font-size: 20px;
+    color: #c8b271;
 }
+
+.repositorio {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.btnGit {
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid #f5e2a9;
+    color: #f5e2a9;
+    border-radius: 5px;
+    width: 150px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.repositorio a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .btnpro {
     display: flex;
