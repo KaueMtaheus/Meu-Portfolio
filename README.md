@@ -18,7 +18,7 @@ Contato: Formulário de contato para facilitar a comunicação com recrutadores 
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou abrir issues para sugerir melhorias.
 
-![portfolio](/img/Portfolio.PNG)
+![portfolio](/img/portfolio-gif.gif)
 
 ## 📜 Licença
 Este projeto está licenciado sob a MIT License.
