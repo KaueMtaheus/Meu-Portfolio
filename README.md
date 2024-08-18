@@ -13,7 +13,7 @@ Contato: Formulário de contato para facilitar a comunicação com recrutadores 
 - HTML5
 - CSS3
 - JavaScript
-Vercel (para deploy)
+- Vercel (para deploy)
 
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou abrir issues para sugerir melhorias.
