@@ -21,8 +21,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests o
 ## 📜 Licença
 Este projeto está licenciado sob a MIT License.
 
-## 🖼️ Screenshots
-Inclua aqui screenshots ou imagens do seu portfólio para dar uma prévia visual do site.
 
 ## 📧 Contato
 Caso queira entrar em contato, você pode me encontrar em:
